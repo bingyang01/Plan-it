@@ -1,0 +1,23 @@
+name: CI/CD
+
+on:
+    workflow_run:
+      workflows: ["Run Tests"]
+      types:
+        - completed
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Run SSH Command
+        uses: matheusvanzan/sshpass-action@v2
+        with:
+          pass: ${{ secrets.SSH_PRIVATE_KEY }}
+          user: student
+          host: 137.43.49.19
+          port: 22
+          run: cd COMP47360_Research-Practicum && bash deploy.sh

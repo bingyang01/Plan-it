@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.js": "/static/js/main.b4204ae6.js",
+    "static/media/palette.svg": "/static/media/palette.d7653058464e92155464c85e3acdd9e7.svg",
+    "static/media/sports_bar.svg": "/static/media/sports_bar.00f8ad7a9f92eef54df1bcf48586cc4b.svg",
+    "static/media/lunch_dining.svg": "/static/media/lunch_dining.1702a2b1b5b8ad5aece9c01a2c32259f.svg",
+    "index.html": "/index.html",
+    "static/media/forest.svg": "/static/media/forest.3614cd77011ca0929b79da416869571c.svg",
+    "static/media/star.svg": "/static/media/star.2da35e33709ed51e7d13f2220d5f20dd.svg",
+    "static/media/calendar_month.svg": "/static/media/calendar_month.10ca3f8dfa121fcc0ba4e5ccd0782914.svg",
+    "static/media/local_cafe.svg": "/static/media/local_cafe.7c954b950ee827f826f722b6889c3d5e.svg",
+    "static/media/museum.svg": "/static/media/museum.5012d4f1b5b04704d55c5b7940b30b04.svg",
+    "main.b4204ae6.js.map": "/static/js/main.b4204ae6.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.b4204ae6.js"
+  ]
+}

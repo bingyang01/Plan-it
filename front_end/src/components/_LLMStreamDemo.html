@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>API Stream Response Handler</title>
+    </head>
+    <body>
+        <h1>API Stream Response</h1>
+        <button id="fetchButton">Fetch Response</button>
+        <div id="responseContainer"></div>
+        <script>
+            document
+                .getElementById("fetchButton")
+                .addEventListener("click", function () {
+                    // const url = 'http://localhost:11434/api/generate';
+                    const url = "http://nycplanner.v6.rocks/ai/api/generate";
+                    const data = {
+                        model: "qwen2:0.5b",
+                        prompt: "Why is the sky blue?",
+                    };
+
+                    fetch(url, {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json",
+                        },
+                        body: JSON.stringify(data),
+                    })
+                        .then((response) => {
+                            const reader = response.body.getReader();
+                            function read() {
+                                reader.read().then(({ done, value }) => {
+                                    if (done) {
+                                        return;
+                                    }
+                                    const text = new TextDecoder().decode(
+                                        value
+                                    );
+                                    processChunk(text);
+                                    read();
+                                });
+                            }
+                            read();
+                        })
+                        .catch((err) => {
+                            console.error("Fetch error:", err);
+                        });
+
+                    function processChunk(chunk) {
+                        try {
+                            const json = JSON.parse(chunk);
+                            const container =
+                                document.getElementById("responseContainer");
+                            container.textContent += json.response; // Append text response
+                            if (json.done) {
+                                container.textContent += "\n\n-- Complete --";
+                            }
+                        } catch (e) {
+                            console.error("Error parsing JSON:", e);
+                        }
+                    }
+                });
+        </script>
+    </body>
+</html>

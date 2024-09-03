@@ -1,0 +1,753 @@
+{
+  "data": {
+    "placeDetails": [
+      {
+        "formattedAddress": "123 Broadway, New York, NY 10006, USA",
+        "googleMapsUri": "https://maps.google.com/?cid=12345678901234567890",
+        "internationalPhoneNumber": "+1 212-123-4567",
+        "location": {
+          "lat": 40.710803,
+          "lng": -74.011731
+        },
+        "name": "Broadway Cafe",
+        "openNow": false,
+        "openingHours": {
+          "openNow": false,
+          "periods": [
+            {
+              "close": {
+                "day": 1,
+                "hour": 17,
+                "minute": 0
+              },
+              "open": {
+                "day": 1,
+                "hour": 8,
+                "minute": 0
+              }
+            },
+            {
+              "close": {
+                "day": 2,
+                "hour": 17,
+                "minute": 0
+              },
+              "open": {
+                "day": 2,
+                "hour": 8,
+                "minute": 0
+              }
+            },
+            {
+              "close": {
+                "day": 3,
+                "hour": 17,
+                "minute": 0
+              },
+              "open": {
+                "day": 3,
+                "hour": 8,
+                "minute": 0
+              }
+            },
+            {
+              "close": {
+                "day": 4,
+                "hour": 17,
+                "minute": 0
+              },
+              "open": {
+                "day": 4,
+                "hour": 8,
+                "minute": 0
+              }
+            },
+            {
+              "close": {
+                "day": 5,
+                "hour": 17,
+                "minute": 0
+              },
+              "open": {
+                "day": 5,
+                "hour": 8,
+                "minute": 0
+              }
+            }
+          ],
+          "specialDays": [],
+          "weekdayDescriptions": [
+            "Monday: 8:00 – 5:00 PM",
+            "Tuesday: 8:00 – 5:00 PM",
+            "Wednesday: 8:00 – 5:00 PM",
+            "Thursday: 8:00 – 5:00 PM",
+            "Friday: 8:00 – 5:00 PM",
+            "Saturday: Closed",
+            "Sunday: Closed"
+          ]
+        },
+        "photos": [
+          {
+            "height": 2000,
+            "photoReference": "EXAMPLE1",
+            "url": "mock_picture.jpg",
+            "width": 3000
+          }
+        ],
+        "place_id": "EXAMPLE_PLACE_ID_1",
+        "rating": 4.2,
+        "types": [
+          "cafe",
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "userRatingCount": 1234,
+        "website": "http://www.broadwaycafe.com/"
+      },
+      {
+        "formattedAddress": "200 Fifth Ave, New York, NY 10010, USA",
+        "googleMapsUri": "https://maps.google.com/?cid=09876543210987654321",
+        "internationalPhoneNumber": "+1 212-567-8901",
+        "location": {
+          "lat": 40.742054,
+          "lng": -73.989877
+        },
+        "name": "Eataly NYC Flatiron",
+        "openNow": true,
+        "openingHours": {
+          "openNow": true,
+          "periods": [
+            {
+              "close": {
+                "day": 1,
+                "hour": 22,
+                "minute": 0
+              },
+              "open": {
+                "day": 1,
+                "hour": 11,
+                "minute": 0
+              }
+            },
+            {
+              "close": {
+                "day": 2,
+                "hour": 22,
+                "minute": 0
+              },
+              "open": {
+                "day": 2,
+                "hour": 11,
+                "minute": 0
+              }
+            },
+            {
+              "close": {
+                "day": 3,
+                "hour": 22,
+                "minute": 0
+              },
+              "open": {
+                "day": 3,
+                "hour": 11,
+                "minute": 0
+              }
+            },
+            {
+              "close": {
+                "day": 4,
+                "hour": 22,
+                "minute": 0
+              },
+              "open": {
+                "day": 4,
+                "hour": 11,
+                "minute": 0
+              }
+            },
+            {
+              "close": {
+                "day": 5,
+                "hour": 23,
+                "minute": 0
+              },
+              "open": {
+                "day": 5,
+                "hour": 11,
+                "minute": 0
+              }
+            },
+            {
+              "close": {
+                "day": 6,
+                "hour": 23,
+                "minute": 0
+              },
+              "open": {
+                "day": 6,
+                "hour": 11,
+                "minute": 0
+              }
+            },
+            {
+              "close": {
+                "day": 0,
+                "hour": 22,
+                "minute": 0
+              },
+              "open": {
+                "day": 0,
+                "hour": 11,
+                "minute": 0
+              }
+            }
+          ],
+          "specialDays": [],
+          "weekdayDescriptions": [
+            "Monday: 11:00 AM – 10:00 PM",
+            "Tuesday: 11:00 AM – 10:00 PM",
+            "Wednesday: 11:00 AM – 10:00 PM",
+            "Thursday: 11:00 AM – 10:00 PM",
+            "Friday: 11:00 AM – 11:00 PM",
+            "Saturday: 11:00 AM – 11:00 PM",
+            "Sunday: 11:00 AM – 10:00 PM"
+          ]
+        },
+        "photos": [
+          {
+            "height": 2500,
+            "photoReference": "EXAMPLE2",
+            "url": "mock_picture.jpg",
+            "width": 4000
+          }
+        ],
+        "place_id": "EXAMPLE_PLACE_ID_2",
+        "rating": 4.6,
+        "types": [
+          "grocery_or_supermarket",
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "userRatingCount": 5678,
+        "website": "http://www.eataly.com/nyc-flatiron"
+      },
+      {
+        "formattedAddress": "11 Madison Ave, New York, NY 10010, USA",
+        "googleMapsUri": "https://maps.google.com/?cid=54321098765432109876",
+        "internationalPhoneNumber": "+1 212-765-4321",
+        "location": {
+          "lat": 40.741566,
+          "lng": -73.987403
+        },
+        "name": "Eleven Madison Park",
+        "openNow": true,
+        "openingHours": {
+          "openNow": true,
+          "periods": [
+            {
+              "close": {
+                "day": 1,
+                "hour": 23,
+                "minute": 0
+              },
+              "open": {
+                "day": 1,
+                "hour": 17,
+                "minute": 0
+              }
+            },
+            {
+              "close": {
+                "day": 2,
+                "hour": 23,
+                "minute": 0
+              },
+              "open": {
+                "day": 2,
+                "hour": 17,
+                "minute": 0
+              }
+            },
+            {
+              "close": {
+                "day": 3,
+                "hour": 23,
+                "minute": 0
+              },
+              "open": {
+                "day": 3,
+                "hour": 17,
+                "minute": 0
+              }
+            },
+            {
+              "close": {
+                "day": 4,
+                "hour": 23,
+                "minute": 0
+              },
+              "open": {
+                "day": 4,
+                "hour": 17,
+                "minute": 0
+              }
+            },
+            {
+              "close": {
+                "day": 5,
+                "hour": 23,
+                "minute": 0
+              },
+              "open": {
+                "day": 5,
+                "hour": 17,
+                "minute": 0
+              }
+            },
+            {
+              "close": {
+                "day": 6,
+                "hour": 23,
+                "minute": 0
+              },
+              "open": {
+                "day": 6,
+                "hour": 17,
+                "minute": 0
+              }
+            },
+            {
+              "close": {
+                "day": 0,
+                "hour": 23,
+                "minute": 0
+              },
+              "open": {
+                "day": 0,
+                "hour": 17,
+                "minute": 0
+              }
+            }
+          ],
+          "specialDays": [],
+          "weekdayDescriptions": [
+            "Monday: 5:00 – 11:00 PM",
+            "Tuesday: 5:00 – 11:00 PM",
+            "Wednesday: 5:00 – 11:00 PM",
+            "Thursday: 5:00 – 11:00 PM",
+            "Friday: 5:00 – 11:00 PM",
+            "Saturday: 5:00 – 11:00 PM",
+            "Sunday: 5:00 – 11:00 PM"
+          ]
+        },
+        "photos": [
+          {
+            "height": 2200,
+            "photoReference": "EXAMPLE3",
+            "url": "mock_picture.jpg",
+            "width": 3500
+          }
+        ],
+        "place_id":"EXAMPLE_PLACE_ID_3",
+        "rating": 4.8,
+        "types": [
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "userRatingCount": 987,
+        "website": "http://www.elevenmadisonpark.com/"
+      },
+      {
+        "formattedAddress": "45 Rockefeller Plaza, New York, NY 10111, USA",
+        "googleMapsUri": "https://maps.google.com/?cid=67890123456789012345",
+        "internationalPhoneNumber": "+1 212-123-6789",
+        "location": {
+          "lat": 40.758740,
+          "lng": -73.978674
+        },
+        "name": "Rainbow Room",
+        "openNow": false,
+        "openingHours": {
+          "openNow": false,
+          "periods": [
+            {
+              "close": {
+                "day": 0,
+                "hour": 23,
+                "minute": 0
+              },
+              "open": {
+                "day": 0,
+                "hour": 17,
+                "minute": 0
+              }
+            },
+            {
+              "close": {
+                "day": 1,
+                "hour": 23,
+                "minute": 0
+              },
+              "open": {
+                "day": 1,
+                "hour": 17,
+                "minute": 0
+              }
+            },
+            {
+              "close": {
+                "day": 2,
+                "hour": 23,
+                "minute": 0
+              },
+              "open": {
+                "day": 2,
+                "hour": 17,
+                "minute": 0
+              }
+            },
+            {
+              "close": {
+                "day": 3,
+                "hour": 23,
+                "minute": 0
+              },
+              "open": {
+                "day": 3,
+                "hour": 17,
+                "minute": 0
+              }
+            },
+            {
+              "close": {
+                "day": 4,
+                "hour": 23,
+                "minute": 0
+              },
+              "open": {
+                "day": 4,
+                "hour": 17,
+                "minute": 0
+              }
+            },
+            {
+              "close": {
+                "day": 5,
+                "hour": 23,
+                "minute": 0
+              },
+              "open": {
+                "day": 5,
+                "hour": 17,
+                "minute": 0
+              }
+            },
+            {
+              "close": {
+                "day": 6,
+                "hour": 23,
+                "minute": 0
+              },
+              "open": {
+                "day": 6,
+                "hour": 17,
+                "minute": 0
+              }
+            }
+          ],
+          "specialDays": [],
+          "weekdayDescriptions": [
+            "Monday: 5:00 – 11:00 PM",
+            "Tuesday: 5:00 – 11:00 PM",
+            "Wednesday: 5:00 – 11:00 PM",
+            "Thursday: 5:00 – 11:00 PM",
+            "Friday: 5:00 – 11:00 PM",
+            "Saturday: 5:00 – 11:00 PM",
+            "Sunday: 5:00 – 11:00 PM"
+          ]
+        },
+        "photos": [
+          {
+            "height": 2300,
+            "photoReference": "EXAMPLE4",
+            "url": "mock_picture.jpg",
+            "width": 3600
+          }
+        ],
+        "place_id": "EXAMPLE_PLACE_ID_4",
+        "rating": 4.7,
+        "types": [
+          "restaurant",
+          "bar",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "userRatingCount": 1230,
+        "website": "http://www.rainbowroom.com/"
+      },
+      {
+        "formattedAddress": "79 Division St, New York, NY 10002, USA",
+        "googleMapsUri": "https://maps.google.com/?cid=87654321098765432109",
+        "internationalPhoneNumber": "+1 212-678-1234",
+        "location": {
+          "lat": 40.714352,
+          "lng": -73.987552
+        },
+        "name": "Mission Chinese Food",
+        "openNow": true,
+        "openingHours": {
+          "openNow": true,
+          "periods": [
+            {
+              "close": {
+                "day": 0,
+                "hour": 23,
+                "minute": 0
+              },
+              "open": {
+                "day": 0,
+                "hour": 17,
+                "minute": 0
+              }
+            },
+            {
+              "close": {
+                "day": 1,
+                "hour": 23,
+                "minute": 0
+              },
+              "open": {
+                "day": 1,
+                "hour": 17,
+                "minute": 0
+              }
+            },
+            {
+              "close": {
+                "day": 2,
+                "hour": 23,
+                "minute": 0
+              },
+              "open": {
+                "day": 2,
+                "hour": 17,
+                "minute": 0
+              }
+            },
+            {
+              "close": {
+                "day": 3,
+                "hour": 23,
+                "minute": 0
+              },
+              "open": {
+                "day": 3,
+                "hour": 17,
+                "minute": 0
+              }
+            },
+            {
+              "close": {
+                "day": 4,
+                "hour": 23,
+                "minute": 0
+              },
+              "open": {
+                "day": 4,
+                "hour": 17,
+                "minute": 0
+              }
+            },
+            {
+              "close": {
+                "day": 5,
+                "hour": 23,
+                "minute": 0
+              },
+              "open": {
+                "day": 5,
+                "hour": 17,
+                "minute": 0
+              }
+            },
+            {
+              "close": {
+                "day": 6,
+                "hour": 23,
+                "minute": 0
+              },
+              "open": {
+                "day": 6,
+                "hour": 17,
+                "minute": 0
+              }
+            }
+          ],
+          "specialDays": [],
+          "weekdayDescriptions": [
+            "Monday: 5:00 – 11:00 PM",
+            "Tuesday: 5:00 – 11:00 PM",
+            "Wednesday: 5:00 – 11:00 PM",
+            "Thursday: 5:00 – 11:00 PM",
+            "Friday: 5:00 – 11:00 PM",
+            "Saturday: 5:00 – 11:00 PM",
+            "Sunday: 5:00 – 11:00 PM"
+          ]
+        },
+        "photos": [
+          {
+            "height": 2400,
+            "photoReference": "EXAMPLE5",
+            "url": "mock_picture.jpg",
+            "width": 3200
+          }
+        ],
+        "place_id": "EXAMPLE_PLACE_ID_5",
+        "rating": 4.3,
+        "types": [
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "userRatingCount": 2140,
+        "website": "http://www.missionchinesefood.com/"
+      },
+      {
+        "formattedAddress": "10 Columbus Circle, New York, NY 10019, USA",
+        "googleMapsUri": "https://maps.google.com/?cid=13579024680246813579",
+        "internationalPhoneNumber": "+1 212-345-6789",
+        "location": {
+          "lat": 40.768527,
+          "lng": -73.983556
+        },
+        "name": "Per Se",
+        "openNow": false,
+        "openingHours": {
+          "openNow": false,
+          "periods": [
+            {
+              "close": {
+                "day": 0,
+                "hour": 23,
+                "minute": 0
+              },
+              "open": {
+                "day": 0,
+                "hour": 17,
+                "minute": 0
+              }
+            },
+            {
+              "close": {
+                "day": 1,
+                "hour": 23,
+                "minute": 0
+              },
+              "open": {
+                "day": 1,
+                "hour": 17,
+                "minute": 0
+              }
+            },
+            {
+              "close": {
+                "day": 2,
+                "hour": 23,
+                "minute": 0
+              },
+              "open": {
+                "day": 2,
+                "hour": 17,
+                "minute": 0
+              }
+            },
+            {
+              "close": {
+                "day": 3,
+                "hour": 23,
+                "minute": 0
+              },
+              "open": {
+                "day": 3,
+                "hour": 17,
+                "minute": 0
+              }
+            },
+            {
+              "close": {
+                "day": 4,
+                "hour": 23,
+                "minute": 0
+              },
+              "open": {
+                "day": 4,
+                "hour": 17,
+                "minute": 0
+              }
+            },
+            {
+              "close": {
+                "day": 5,
+                "hour": 23,
+                "minute": 0
+              },
+              "open": {
+                "day": 5,
+                "hour": 17,
+                "minute": 0
+              }
+            },
+            {
+              "close": {
+                "day": 6,
+                "hour": 23,
+                "minute": 0
+              },
+              "open": {
+                "day": 6,
+                "hour": 17,
+                "minute": 0
+              }
+            }
+          ],
+          "specialDays": [],
+          "weekdayDescriptions": [
+            "Monday: 5:00 – 11:00 PM",
+            "Tuesday: 5:00 – 11:00 PM",
+            "Wednesday: 5:00 – 11:00 PM",
+            "Thursday: 5:00 – 11:00 PM",
+            "Friday: 5:00 – 11:00 PM",
+            "Saturday: 5:00 – 11:00 PM",
+            "Sunday: 5:00 – 11:00 PM"
+          ]
+        },
+        "photos": [
+          {
+            "height": 2600,
+            "photoReference": "EXAMPLE6",
+            "url": "mock_picture.jpg",
+            "width": 3900
+          }
+        ],
+        "place_id": "EXAMPLE_PLACE_ID_6",
+        "rating": 4.9,
+        "types": [
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "userRatingCount": 3210,
+        "website": "http://www.perseny.com/"
+      }
+    ]
+  }
+}

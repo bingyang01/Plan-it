@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* ------------------------------------------------------------------------ */
+  /* Home Page */
+  
+  .homepage--image {
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+  }
+
+  /* ------------------------------------------------------------------------ */
+  /* Planning Page */
+  
+  .icon--plan{
+    cursor: pointer;
+  }
+
+  /* ------------------------------------------------------------------------ */
+  /* Left Panel */
+
+  .container--left--top {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container--left--mid {
+  padding: 1.5em;
+  height: 20vh;
+}
+
+  /* ------------------------------------------------------------------------ */
+  /* Cards */
+
+  .card--details--image{
+    width: 100%;
+    height: 10rem;
+    object-fit: cover;
+  }
+
+  .card--details--dialogbox {
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em;
+  }
+
+  /* ------------------------------------------------------------------------ */
+  /* Itinerary */
+
+  .container--right--top {
+    display: flex;
+    width: 100%;
+    height: 5vh;
+    margin-top: 0.5em;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5em;
+}
+
+.container--right--bottom {
+  padding: 1em;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  height: 70vh;
+}
+
+.container--right--bottom--item {
+  padding: 0.5em;
+}
+
+.container--right--bottom--radio {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+  /* ------------------------------------------------------------------------ */
+
+.hover-pointer {
+  cursor: pointer;
+}
+
+.hover-pointer:hover {
+  background-color: lightblue;
+  border-radius: 8px;
+  background-color: rgba(25, 118, 210, 0.057);
+  box-shadow: none;
+  backdrop-filter: blur(3px);
+}

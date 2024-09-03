@@ -1,0 +1,172 @@
+scalar JSON
+#poi data
+type POIData{
+    _id: ID
+    type: String
+    id: String
+    lat: Float
+    lon: Float
+    tags: JSON
+}
+
+
+
+input TagFilterInput{
+    key: String
+    value: String
+}
+
+input FilterInput{
+    tags: [TagFilterInput]
+    latMin: Float
+    latMax: Float
+    lonMin: Float
+    lonMax: Float
+}
+
+
+#google places api
+
+
+#opening hours
+type Date {
+    year: Int
+    month: Int
+    day: Int
+}
+
+# Status changing points.
+
+type Point {
+    date: Date
+    truncated: Boolean
+    day: Int
+    hour: Int
+    minute: Int
+}
+
+# The periods that this place is open during the week. The periods are in chronological order, starting with Sunday in the place-local timezone.
+type Period {
+    open: Point
+    close: Point
+}
+type SpecialDay {
+    date: Date
+}
+
+type OpeningHours {
+    openNow: Boolean
+    periods: [Period]
+    weekdayDescriptions: [String]
+    secondaryHoursType: String
+    specialDays: [SpecialDay]
+}
+
+#address and location
+type Location {
+    lat: Float
+    lng: Float
+}
+#photos
+type Photo {
+    photoReference: String
+    height: Int
+    width: Int
+    url: String
+}
+
+
+
+type Place {
+    place_id:String
+    name: String
+    formattedAddress: String
+    rating: Float
+    userRatingCount: Int
+    location: Location
+    website: String
+    openingHours: OpeningHours
+    types: [String]
+    internationalPhoneNumber: String
+    googleMapsUri: String
+    photos: [Photo]
+    openNow: Boolean
+}
+
+
+#busyness level mock
+type Centroid{
+    longitude: Float
+    latitude: Float
+}
+
+type BusynessData{
+    hour: Int
+    busynessLevel: Float
+}
+
+input CentroidInput {
+  longitude: Float
+  latitude: Float
+}
+
+type LocationBusyness {
+    zoneID: Int
+  centroid: Centroid
+  busynessLevel: Float
+    message: String
+}
+type ZoneBusyness{
+    timeKey: String
+    locations: [LocationBusyness]
+}
+type RemainingBusynessData{
+    hour: Int
+    busynessLevel: Float
+     message: String
+}
+
+# ticketmaster
+type Event{
+#    event id
+    place_id: String
+    name: String
+#    address: line1
+    formattedAddress: String
+#    return place holder to frontend
+    rating: String
+    userRatingCount: String
+    location: Location
+    types: String
+    photos: [eventPhoto]
+#    startdate
+    openNow: String
+#    start and end date of event
+    openingHours: String
+    website: String
+    internationalPhoneNumber: String
+
+
+}
+type eventPhoto{
+    photoReference: String
+    height: Int
+    width: Int
+    url: String
+}
+
+
+type Query {
+    nearbyPlaces(location: String!, radius: Int!, placeTypes: [String]!, keyword: [String]): [Place]
+    placeDetails(placeId: String!): Place
+    nearbyEvents(location: String!, radius: Int!, placeTypes:[String], keyword:[String], start_date_time: String): [Event]
+    eventDetails(eventID: String!): Event
+    mockNearbyPlaces(location: String, radius: Int, placeTypes: [String]): [Place]
+    mockPlaceDetails(placeId: String!): Place
+    allPOIData: [POIData]
+    POIDataByType(tagKey: String!, tagValue: String!): [POIData]
+    POIDataByFilters(filters: FilterInput!): [POIData]
+    getCertainZoneBusyness(centroid: CentroidInput!, input_datetime: String!):LocationBusyness
+    getCertainZoneFutureBusyness(centroid: CentroidInput!, input_datetime: String!):[RemainingBusynessData]
+    getAllZoneBusyness(input_datetime: String, input_date: String):[ZoneBusyness]
+}
